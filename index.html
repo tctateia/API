@@ -3,18 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gucci Gallery</title>
+    <title>Photo Gallery</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>Gucci Gallery</h1>
-      <input type="text" id="searchInput" placeholder="Search..." />
-      <button id="searchButton">Search</button>
+      <h1>Gucci Photo Gallery</h1>
+      <div class="search-bar">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search for images..."
+        />
+        <button id="searchSubmit">Search</button>
+      </div>
     </header>
-    <main>
-      <div id="gallery"></div>
-    </main>
-    <script type="module" src="app.mjs"></script>
+    <div id="gallery" class="gallery-container"></div>
+
+    <script type="module" src="gallery.mjs"></script>
   </body>
 </html>

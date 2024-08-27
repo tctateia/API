@@ -1,47 +1,70 @@
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #000;
-}
-
-header {
-    background-color: #000;
-    color: #ff0000; 
-    padding: 20px;
+    padding: 0;
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f28c4c27-e958-4ee3-88b6-7616f91528cd/dgkptwg-679139a0-75c4-4943-b165-e65452f85e99.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2YyOGM0YzI3LWU5NTgtNGVlMy04OGI2LTc2MTZmOTE1MjhjZFwvZGdrcHR3Zy02NzkxMzlhMC03NWM0LTQ5NDMtYjE2NS1lNjU0NTJmODVlOTkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.sokjtfUfQvSsj8YENhMFntn8qNLQRlyc_Lz6r3qmji4');
+        background-size: cover;     
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-attachment: fixed; 
+    
+  }
+  
+  header {
+    background-color: #000000;
+    color: rgba(22, 255, 1, 0.406);
+    padding: 1rem;
     text-align: center;
-}
-
-h1 {
+    
+    
+    
+  }
+  
+  h1 {
     margin: 0;
-    font-size: 2em;
-}
-
-#searchInput {
-    padding: 10px;
-    width: 50%;
-    border: 2px solid #ff0000; 
+  }
+  
+  .search-bar {
+    margin: 1rem 0;
+    text-align: center;
+  }
+  
+  .search-bar input {
+    padding: 0.5rem;
+    width: 300px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-}
-
-#searchButton {
-    padding: 10px 20px;
-    background-color: #ff0000; 
-    color: #fff;
+  }
+  
+  .search-bar button {
+    padding: 0.5rem 1rem;
     border: none;
+    background-color: #333;
+    color: white;
     border-radius: 5px;
     cursor: pointer;
-}
-
-#gallery {
+  }
+  
+  .search-bar button:hover {
+    background-color: #555;
+  }
+  
+  .gallery-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
-}
-
-img {
-    margin: 10px;
-    border: 5px solid #00a86b; 
+    padding: 1rem;
+  }
+  
+  .gallery-image {
+    margin: 0.5rem;
+    width: 300px;
+    height: auto;
     border-radius: 10px;
-}
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .gallery-image:hover {
+    transform: scale(1.05);
+  }
